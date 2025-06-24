@@ -2,6 +2,8 @@ package Frames;
 import java.lang.*;
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
+import java.util.*;
 import java.awt.event.*;
 import Entities.*;
 
@@ -122,8 +124,8 @@ public void mouseClicked(MouseEvent me){}
     this.setVisible(false);
     a11.setVisible(true);
 }
-}
-				else if(s1.isEmpty() || s2.isEmpty()){
+
+				else if (s1.isEmpty() || s2.isEmpty()){
 				JOptionPane.showMessageDialog(null,"Fill up Name and Key");}
 				else{
 					JOptionPane.showMessageDialog(null,"name or key not correct");
