@@ -15,7 +15,7 @@ public class FrameIntro extends JFrame implements MouseListener,ActionListener{
 	Font myfont;
 	JPasswordField passfld;
 	ImageIcon img;
-	JButton rgbtn,lgbtn,admin;
+	JButton rgbtn,lbtn,admin;
 	
 	
 	
@@ -33,7 +33,7 @@ public class FrameIntro extends JFrame implements MouseListener,ActionListener{
 		img = new ImageIcon(getClass().getResource("/Images/blood.jpg"));
 		imagelbl=new JLabel(img);
 		imagelbl.setBounds(0,0,850,450);
-		panel.add(imagelbl);
+		//panel.add(imagelbl);
 		
 		
 		
@@ -62,11 +62,11 @@ public class FrameIntro extends JFrame implements MouseListener,ActionListener{
 		rgbtn.addMouseListener(this);
 		panel.add(rgbtn);
 		
-		lgbtn=new JButton("Login");
-		lgbtn.setBounds(180,270,100,50);
-		lgbtn.addActionListener(this);
-		lgbtn.addMouseListener(this);
-		panel.add(lgbtn);
+		lbtn=new JButton("Login");
+		lbtn.setBounds(180,270,100,50);
+		lbtn.addActionListener(this);
+		lbtn.addMouseListener(this);
+		panel.add(lbtn);
 		
 		admin=new JButton("Admin");
 		admin.setBounds(480,270,140,50);
@@ -90,9 +90,9 @@ public class FrameIntro extends JFrame implements MouseListener,ActionListener{
 	public void mouseReleased(MouseEvent me){}
 	public void mouseEntered(MouseEvent me)
 	{
-		if(me.getSource()==lgbtn){
-			lgbtn.setBackground(Color.RED);
-			lgbtn.setForeground(Color.WHITE);
+		if(me.getSource()==lbtn){
+			lbtn.setBackground(Color.RED);
+			lbtn.setForeground(Color.WHITE);
 		}
 		else if(me.getSource()==rgbtn){
 			rgbtn.setBackground(Color.RED);
@@ -111,9 +111,9 @@ public class FrameIntro extends JFrame implements MouseListener,ActionListener{
 			rgbtn.setBackground(Color.WHITE);
 			rgbtn.setForeground(Color.BLACK);
 		}
-		else if(me.getSource()==lgbtn){
-			lgbtn.setBackground(Color.WHITE);
-			lgbtn.setForeground(Color.BLACK);
+		else if(me.getSource()==lbtn){
+			lbtn.setBackground(Color.WHITE);
+			lbtn.setForeground(Color.BLACK);
 		
 		}
 		else if(me.getSource()==admin){
@@ -139,7 +139,7 @@ public class FrameIntro extends JFrame implements MouseListener,ActionListener{
 				
 				
 			}
-			else if (ae.getSource()==lgbtn){
+			else if (ae.getSource()==lbtn){
 				if(s1.isEmpty() || s2.isEmpty()){
 					JOptionPane.showMessageDialog(null,"Fill up Name and Key");
 				}
