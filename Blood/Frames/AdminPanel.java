@@ -2,6 +2,8 @@ package Frames;
 import java.lang.*;
 import javax.swing.*;
 import java.awt.*;
+import java.util.*;
+import java.io.*;
 import java.awt.event.*;
 import Entities.*;
 
@@ -16,7 +18,6 @@ public class AdminPanel extends JFrame implements MouseListener,ActionListener {
 	
 	
 	public AdminPanel(){
-		System.out.println("AdminPanel constructor called");
 		super("SuperUser");
 		this.setSize(850,450);
 		this.setLocationRelativeTo(null);
@@ -25,17 +26,17 @@ public class AdminPanel extends JFrame implements MouseListener,ActionListener {
 		panel=new JPanel();
 		panel.setLayout(null);
 		
-		i1=new ImageIcon("./Images/Admin.jpg");
+		/*i1=new ImageIcon("./Images/Admin.jpg");
 		img=new JLabel(i1);
 		img.setBounds(0,0,850,450);
-		panel.add(img);
+		panel.add(img);*/
 		
-		del=new JButton("Delete Account");
+		/*del=new JButton("Delete Account");
 		del.setBounds(300,50,250,30);
 		del.setForeground(Color.RED);
 		del.addMouseListener(this);
 		del.addActionListener(this);
-		panel.add(del);
+		//panel.add(del);*/
 		
 		
 		delfld=new JTextField();
@@ -107,11 +108,11 @@ public class AdminPanel extends JFrame implements MouseListener,ActionListener {
 				
 				
 			}
-			else if(ae.getSource()==del){
+			/*else if(ae.getSource()==del){
 				Account a1=new Account();
 				a1.deleteAccount(s1);
 
-			}
+			}*/
 
 
 
