@@ -11,7 +11,6 @@ public class Homepage extends JFrame implements MouseListener,ActionListener{
 	JButton Search,back;
 	JTextField f;
 	public Homepage(){
-		System.out.println("FrameIntro constructor called");
 
 		
 		super("homepages");
